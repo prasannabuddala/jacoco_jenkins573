@@ -20,4 +20,11 @@ public class AppTest
         assertEquals("Hello DURGA", p.getMessage("DURGA"));
 
     }
+	@Test
+    public void testNameEmpty() {
+
+        App c = new App();
+        assertEquals("Please provide a name!", c.getMessage(" "));
+    }
+	
 }
